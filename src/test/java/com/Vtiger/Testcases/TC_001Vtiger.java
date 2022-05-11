@@ -54,6 +54,7 @@ public class TC_001Vtiger   extends BaseClass  {
 		else {
 			System.out.println("TC Fail");
 		}
+		System.out.println("this is my vtiger testcase");
 	}  
 
 }
