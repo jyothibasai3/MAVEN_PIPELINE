@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite" thread-count="5" parallel="tests">
+<parameter name="beforetest" value="hello"></parameter>
+<parameter name="aftertest" value="hi"></parameter>
+  <test  name="Test">
+    <classes>
+      <class name="com.Vtiger.Testcases.TC_001Vtiger"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+<parameter name="BROWSER" value="Chrome"></parameter>
+  <test  name="Test1" parallel="tests">
+    <classes>
+      <class name="com.Vtiger.Testcases.Tc_003Contacts_Lastname"/>
+      <class name="com.Vtiger.Testcases.Tc_002Vtiger"/>
+      <class name="com.Vtiger.Testcases.TC_001Vtiger"/>
+    </classes>
+  </test> <!-- Test -->
+  <parameter name="BROWSER" value="Firefox"></parameter>
+ <test name="test2" parallel='classes'>
+ <classes>
+ <class name="com.Vtiger.Testcases.Tc_002Vtiger"/>
+ <class name="com.Vtiger.Testcases.Tc_003Contacts_Lastname"/>
+  <class name="com.Vtiger.Testcases.TC_001Vtiger"/>
+ </classes>
+ </test> <!-- Test -->
+  </suite>  <!---suite-->   
+       

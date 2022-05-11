@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="BROWSER" value="Firefox"/>
+  <test thread-count="5" parallel="classes" name="test2(failed)">
+    <classes>
+      <class name="com.Vtiger.Testcases.Tc_003Contacts_Lastname">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="ContactsLastName"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.Tc_003Contacts_Lastname -->
+      <class name="com.Vtiger.Testcases.Tc_002Vtiger">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="IndustryType"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.Tc_002Vtiger -->
+      <class name="com.Vtiger.Testcases.TC_001Vtiger">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="OrganisationName"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.TC_001Vtiger -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.Vtiger.Testcases.Tc_003Contacts_Lastname">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="ContactsLastName"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.Tc_003Contacts_Lastname -->
+      <class name="com.Vtiger.Testcases.Tc_002Vtiger">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="IndustryType"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.Tc_002Vtiger -->
+      <class name="com.Vtiger.Testcases.TC_001Vtiger">
+        <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="OrganisationName"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.Vtiger.Testcases.TC_001Vtiger -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
